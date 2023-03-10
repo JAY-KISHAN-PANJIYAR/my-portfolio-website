@@ -874,8 +874,11 @@
    		<div class="col-twelve">
 
             <!-- form -->
-            <form name="contactForm" id="contactForm" method="post" action="">
+            <form name="contactForm" data-netlify="true" method="POST" netlify-honeypot="bot-field">
       			<fieldset>
+			<div class="form-field" hidden aria-hidden="true">
+ 						   <input name="bot-field">
+                  </div>
 
                   <div class="form-field">
  						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">

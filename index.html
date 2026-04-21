@@ -365,55 +365,75 @@
       object-fit: cover;
     }
 
-    .experience-grid {
+    .experience-layout {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1.2fr 0.8fr;
       gap: 18px;
       margin-top: 18px;
+      align-items: start;
     }
 
-    .experience-card {
+    .experience-main,
+    .experience-side {
       border-radius: var(--radius-xl);
       padding: 28px;
     }
 
-    .experience-card .top {
+    .experience-list {
+      display: grid;
+      gap: 22px;
+    }
+
+    .experience-entry {
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .experience-entry:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .experience-head {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       gap: 18px;
-      margin-bottom: 14px;
     }
 
-    .experience-card h3 {
+    .experience-head h3 {
       margin: 0;
-      font-size: 1.35rem;
+      font-size: 1.16rem;
+      line-height: 1.35;
     }
 
-    .experience-card .role {
+    .experience-org {
       color: #f5deb2;
       margin-top: 6px;
-      font-size: 0.92rem;
+      font-size: 0.9rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
 
-    .experience-card .period {
-      color: var(--muted);
-      font-size: 0.88rem;
+    .experience-meta {
       text-align: right;
-      line-height: 1.5;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.55;
+      flex-shrink: 0;
     }
 
-    .experience-card ul {
+    .experience-entry ul,
+    .compact-list {
       list-style: none;
       padding: 0;
-      margin: 16px 0 0;
+      margin: 14px 0 0;
       display: grid;
-      gap: 12px;
+      gap: 10px;
     }
 
-    .experience-card li {
+    .experience-entry li,
+    .compact-list li {
       display: grid;
       grid-template-columns: 10px 1fr;
       gap: 12px;
@@ -421,7 +441,8 @@
       line-height: 1.75;
     }
 
-    .experience-card li::before {
+    .experience-entry li::before,
+    .compact-list li::before {
       content: "";
       width: 10px;
       height: 10px;
@@ -429,6 +450,24 @@
       border-radius: 50%;
       background: var(--gold);
       box-shadow: 0 0 0 6px rgba(212,175,97,0.12);
+    }
+
+    .experience-note {
+      margin-top: 12px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 0.96rem;
+    }
+
+    .side-block + .side-block {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    .side-block h3 {
+      margin: 0 0 14px;
+      font-size: 1.12rem;
     }
 
     .showcase-grid {
@@ -848,9 +887,12 @@
 
       .metrics,
       .showcase-grid,
-      .gallery-grid,
-      .experience-grid {
+      .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
+      }
+
+      .experience-layout {
+        grid-template-columns: 1fr;
       }
 
       .hero-copy,
@@ -876,7 +918,7 @@
       .showcase-grid,
       .achievement-cards,
       .gallery-grid,
-      .experience-grid { grid-template-columns: 1fr; }
+      .experience-layout { grid-template-columns: 1fr; }
       .metric,
       .story-card,
       .experience-card,
@@ -987,71 +1029,128 @@
         <div class="section-top">
           <div>
             <span class="section-kicker">Experience</span>
-            <h2 class="section-title">A record of execution across different kinds of pressure.</h2>
+            <h2 class="section-title">Professional experience first. Leadership and community work separate.</h2>
           </div>
-          <p class="section-desc">From fintech and energy to entrepreneurship and community building, the common theme in my work has been initiative, ownership, and the ability to move from concept to execution with real people, real constraints, and real outcomes.</p>
+          <p class="section-desc">I reorganized this section to match the resume direction you showed. Core professional roles now lead with a cleaner, more structured layout. Founder, leadership, and campus activities are grouped separately so the experience story feels sharper.</p>
         </div>
 
-        <div class="experience-grid">
-          <article class="experience-card glass">
-            <div class="top">
-              <div>
-                <h3>Fireflower Alternative Energy</h3>
-                <div class="role">Strategy and Technology Consultant</div>
-              </div>
-              <div class="period">Boston, MA<br />May 2025 to Present</div>
-            </div>
-            <ul>
-              <li>Supporting strategic initiatives for commercial solar adoption in the Greater Boston area.</li>
-              <li>Building ROI driven financial models to guide decision making and project economics.</li>
-              <li>Contributing to digital process improvement, internal systems thinking, and client facing strategy conversations.</li>
-            </ul>
-          </article>
+        <div class="experience-layout">
+          <div class="experience-main glass">
+            <div class="experience-list">
+              <article class="experience-entry">
+                <div class="experience-head">
+                  <div>
+                    <h3>Board Fellow</h3>
+                    <div class="experience-org">Justice 4 Housing</div>
+                  </div>
+                  <div class="experience-meta">Boston, MA, USA<br />September 2025 to Present</div>
+                </div>
+                <p class="experience-note">Board fellowship experience featured in your current resume structure. I kept this role in the professional section and removed the placeholder text without inventing unsupported bullets.</p>
+              </article>
 
-          <article class="experience-card glass">
-            <div class="top">
-              <div>
-                <h3>Khalti Pvt. Ltd.</h3>
-                <div class="role">Business Development and Innovation Manager</div>
-              </div>
-              <div class="period">Kathmandu, Nepal<br />April 2023 to August 2024</div>
-            </div>
-            <ul>
-              <li>Closed 1,500+ business partnerships including 150+ tier one businesses in Nepal.</li>
-              <li>Led growth initiatives across digital wallet, payment gateway, QR, and POS solutions.</li>
-              <li>Launched Places and 10+ business initiatives while expanding international partnerships.</li>
-            </ul>
-          </article>
+              <article class="experience-entry">
+                <div class="experience-head">
+                  <div>
+                    <h3>Business Analyst</h3>
+                    <div class="experience-org">Babson College</div>
+                  </div>
+                  <div class="experience-meta">Boston, MA, USA<br />September 2025 to Present</div>
+                </div>
+                <p class="experience-note">Current Babson role placed with your professional experience. Once you give the exact bullet points, this row can be upgraded immediately without changing the layout.</p>
+              </article>
 
-          <article class="experience-card glass">
-            <div class="top">
-              <div>
-                <h3>Hult Prize Foundation</h3>
-                <div class="role">Regional Associate for Central and South Asia</div>
-              </div>
-              <div class="period">Kathmandu, Nepal<br />June 2021 to August 2022</div>
-            </div>
-            <ul>
-              <li>Recruited and onboarded 500+ Campus Directors across Asia.</li>
-              <li>Supported 100+ emerging leaders and changemakers throughout the on campus phase.</li>
-              <li>Directed operations for regional summits across multiple countries.</li>
-            </ul>
-          </article>
+              <article class="experience-entry">
+                <div class="experience-head">
+                  <div>
+                    <h3>Strategy &amp; Technology Consultant</h3>
+                    <div class="experience-org">FireFlower Alternative Energy</div>
+                  </div>
+                  <div class="experience-meta">Boston, MA, USA<br />May 2025 to September 2025</div>
+                </div>
+                <ul>
+                  <li>Built ROI driven solar financial models to support investment decisions and commercial project evaluation.</li>
+                  <li>Led digital transformation work to streamline internal operations and reduce execution friction.</li>
+                  <li>Supported business development through proposals, strategic discussions, and technology enabled process improvements.</li>
+                </ul>
+              </article>
 
-          <article class="experience-card glass">
-            <div class="top">
-              <div>
-                <h3>NXTGEN Foundation</h3>
-                <div class="role">Founder and Project Lead</div>
-              </div>
-              <div class="period">Kathmandu, Nepal<br />May 2020 to June 2021</div>
+              <article class="experience-entry">
+                <div class="experience-head">
+                  <div>
+                    <h3>Student Consultant</h3>
+                    <div class="experience-org">Central One Federal Credit Union</div>
+                  </div>
+                  <div class="experience-meta">Boston, MA, USA<br />January 2025 to May 2025</div>
+                </div>
+                <p class="experience-note">Placed in the professional section to match your screenshot. I removed the placeholder and kept the role visible without adding made up impact statements.</p>
+              </article>
+
+              <article class="experience-entry">
+                <div class="experience-head">
+                  <div>
+                    <h3>Business Development and Innovation Manager</h3>
+                    <div class="experience-org">KHALTI Pvt. Ltd.</div>
+                  </div>
+                  <div class="experience-meta">Kathmandu, Nepal<br />April 2023 to August 2024</div>
+                </div>
+                <ul>
+                  <li>Closed 1,500+ business partnerships, including 150+ tier 1 businesses, across Nepal.</li>
+                  <li>Led B2B fintech integrations across digital wallet, payment gateway, QR, and POS solutions.</li>
+                  <li>Launched Places and 10+ business initiatives while expanding international partnerships and payment solutions.</li>
+                </ul>
+              </article>
+
+              <article class="experience-entry">
+                <div class="experience-head">
+                  <div>
+                    <h3>Community Manager</h3>
+                    <div class="experience-org">Nepal STEM Alliance</div>
+                  </div>
+                  <div class="experience-meta">Kathmandu, Nepal<br />September 2022 to April 2023</div>
+                </div>
+                <ul>
+                  <li>Built and engaged a community of 1,000+ young students through targeted STEM initiatives.</li>
+                  <li>Designed and executed events that increased participation, learning, and ecosystem visibility.</li>
+                  <li>Supported partnerships and outreach across 10+ cities in Nepal.</li>
+                </ul>
+              </article>
+
+              <article class="experience-entry">
+                <div class="experience-head">
+                  <div>
+                    <h3>Regional Associate for Central and South Asia</h3>
+                    <div class="experience-org">Hult Prize Foundation</div>
+                  </div>
+                  <div class="experience-meta">June 2021 to August 2022</div>
+                </div>
+                <ul>
+                  <li>Recruited and onboarded 500+ campus directors across Asia while supervising 100+ student leaders.</li>
+                  <li>Led operations for 4 regional summits across Mumbai, Dhaka, Islamabad, and Kathmandu.</li>
+                  <li>Supported university level entrepreneurship programs and changemaker engagement at scale.</li>
+                </ul>
+              </article>
             </div>
-            <ul>
-              <li>Led 10+ projects, raised $10,000+, and collaborated with 100+ businesses.</li>
-              <li>Built student focused programs around entrepreneurship, events, and execution.</li>
-              <li>Created momentum by combining partnerships, community building, and team coordination.</li>
-            </ul>
-          </article>
+          </div>
+
+          <aside class="experience-side glass">
+            <div class="side-block">
+              <h3>Leadership and engagement</h3>
+              <ul class="compact-list">
+                <li>Academic Mentor, Summer Study Program, Babson College, 2025</li>
+                <li>Founder and Project Lead, NxtGen Foundation, 2020 to 2021</li>
+                <li>Top 20 Campus Director, Hult Prize Foundation, 2021</li>
+              </ul>
+            </div>
+
+            <div class="side-block">
+              <h3>Selected impact from earlier leadership work</h3>
+              <ul class="compact-list">
+                <li>Led 10+ projects, raised $10,000+, and collaborated with 100+ businesses through NxtGen Foundation.</li>
+                <li>Built university startup momentum through Hult Prize leadership and entrepreneurship programming.</li>
+                <li>Developed a cross sector profile spanning fintech, clean energy, entrepreneurship, and student ecosystem building.</li>
+              </ul>
+            </div>
+          </aside>
         </div>
       </section>
 

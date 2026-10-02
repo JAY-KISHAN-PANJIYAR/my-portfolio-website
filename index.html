@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jay Kishan Panjiyar | Portfolio</title>
-  <meta name="description" content="Jay Kishan Panjiyar is an MBA graduate from Babson College with concentrations in Business Analytics, Machine Learning, and Entrepreneurship — specializing in strategy, consulting, and analytics." />
+  <meta name="description" content="Jay Kishan Panjiyar: product and analytics professional, engineer, and Babson STEM MBA working across AI, fintech, payments, and financial data. Product Lead at SRAN." />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,6 +29,7 @@
 
   --shadow: 0 20px 60px rgba(0,0,0,0.45);
 
+  --max: 1180px;
   --radius-xl: 24px;
   --radius-lg: 18px;
   --radius-md: 12px;
@@ -507,6 +508,42 @@
       background: linear-gradient(180deg, rgba(7,17,31,0.08), rgba(7,17,31,0.18) 35%, rgba(7,17,31,0.9) 100%);
     }
 
+    .showcase-card.text-card {
+      background:
+        radial-gradient(circle at 20% 15%, rgba(212,175,97,0.22), transparent 40%),
+        radial-gradient(circle at 85% 30%, rgba(53,107,201,0.35), transparent 45%),
+        linear-gradient(160deg, #0d1d33 0%, #0a1628 60%, #07111f 100%);
+    }
+
+    .showcase-card.text-card .sran-stats {
+      position: absolute;
+      top: 28px; left: 24px; right: 24px;
+      z-index: 2;
+      display: grid;
+      gap: 14px;
+    }
+
+    .showcase-card.text-card .sran-stats strong {
+      display: block;
+      font-size: 2.4rem;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+
+    .showcase-card.text-card .sran-stats span {
+      color: var(--soft);
+      font-size: 0.92rem;
+    }
+
+    .showcase-content a.card-link {
+      display: inline-block;
+      margin-top: 12px;
+      color: #f5deb2;
+      font-weight: 600;
+      position: relative;
+      z-index: 3;
+    }
+
     .showcase-content {
       position: absolute;
       inset: auto 0 0 0;
@@ -946,7 +983,7 @@
         </div>
         <div class="brand-text">
           <strong>Jay Kishan Panjiyar</strong>
-          <span>Strategy · Consulting · Analytics</span>
+          <span>Product · Analytics · AI</span>
         </div>
       </div>
       <nav class="nav">
@@ -963,22 +1000,22 @@
       <section class="hero">
         <div class="hero-copy">
           <div>
-            <div class="eyebrow">Strategy · Consulting · Analytics · Leadership</div>
-            <h1>Structured thinking. Real-world execution. Measurable impact.</h1>
-            <p class="lead">MBA from Babson College (Business Analytics · Machine Learning · Entrepreneurship). I help organizations solve complex problems through structured analysis, clear strategy, and disciplined execution — with hands-on experience across fintech, clean energy, and emerging markets.</p>
+            <div class="eyebrow">Product · Analytics · AI · Fintech &amp; Payments</div>
+            <h1>Product decisions, built on data.</h1>
+            <p class="lead">Engineer and Babson STEM MBA (Business Analytics, Machine Learning, Entrepreneurship). I work where product decisions meet data: understanding what customers need, measuring what matters, and turning both into products, AI tools, and reports teams actually use.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#contact">Let’s Connect</a>
-              <a class="btn btn-secondary" href="#gallery">View Selected Moments</a>
+              <a class="btn btn-secondary" href="#work">See My Work</a>
             </div>
           </div>
           <div class="hero-bottom">
             <div class="mini-card">
               <small>Target Roles</small>
-              <strong>Strategy, Management Consulting, and Analytics.</strong>
+              <strong>Product, Analytics, and Consulting.</strong>
             </div>
             <div class="mini-card">
               <small>Edge</small>
-              <strong>Engineer-turned-MBA with specializations in Analytics, ML, and Entrepreneurship.</strong>
+              <strong>Engineer turned MBA, with hands on work in fintech, payments, and financial data.</strong>
             </div>
           </div>
         </div>
@@ -987,7 +1024,7 @@
           <img src="images/profile-pic.jpg" alt="Jay Kishan Panjiyar professional headshot of Jay Kishan Panjiyar in a suit and tie" loading="eager" />
           <div class="hero-badge">
             <div class="small">Currently</div>
-            <strong>Open to Strategy, Consulting, and Analytics roles — available now.</strong>
+            <strong>Open to product, analytics, and consulting roles. Based in Boston, available full time.</strong>
           </div>
         </div>
       </section>
@@ -995,15 +1032,15 @@
       <section class="metrics">
         <div class="metric glass">
           <strong>1,500+</strong>
-          <span>business partnerships closed through fintech growth and business development</span>
+          <span>business partnerships closed at IME Khalti, including 150+ Tier 1 businesses</span>
         </div>
         <div class="metric glass">
-          <strong>500+</strong>
-          <span>campus directors recruited across Asia through Hult Prize leadership programs</span>
+          <strong>280</strong>
+          <span>companies across 12 sectors in SRAN's public Financials directory</span>
         </div>
         <div class="metric glass">
           <strong>10+</strong>
-          <span>projects and business initiatives launched across startup and nonprofit environments</span>
+          <span>new services, partnerships, and business initiatives at IME Khalti, including Khalti Places</span>
         </div>
         <div class="metric glass">
           <strong>Top 20</strong>
@@ -1015,17 +1052,17 @@
         <div class="section-top">
           <div>
             <span class="section-kicker">About</span>
-            <h2 class="section-title">Built to solve hard problems in ambiguous environments.</h2>
+            <h2 class="section-title">Built across fintech, clean energy, and financial data.</h2>
           </div>
         </div>
       
         <div class="story-grid">
           <div class="story-card glass">
-            <p>I am a strategy and analytics professional with an engineering foundation and an MBA from Babson College, where I concentrated in Business Analytics, Machine Learning, and Entrepreneurship. I have built and executed across three continents — fintech scale-up in Nepal, clean energy consulting in Boston, and entrepreneurship ecosystems across Asia.</p>
+            <p>I am a product and analytics professional with an engineering degree and a STEM designated MBA from Babson College, where I concentrated in Business Analytics, Machine Learning, and Entrepreneurship. I have worked across Nepal, South Asia, and the United States.</p>
 
-            <p>At Khalti (Nepal's leading digital wallet), I closed 1,500+ B2B partnerships and launched 10+ business initiatives. At FireFlower, I built solar ROI models and led digital transformation. At Babson, I delivered strategy work for Central One Federal Credit Union and Justice 4 Housing.</p>
+            <p>At SRAN, I lead product and build the data pipelines behind a financial research platform for Nepal's equity market. At IME Khalti, I helped launch Khalti Places and led payment integrations for merchants. In Boston, I built a Python prospecting tool at FireFlower and Excel reporting models at Babson.</p>
 
-            <p>I am drawn to roles where structured thinking, client-facing communication, and analytical rigor converge — whether in management consulting, corporate strategy, or data-driven decision-making.</p>
+            <p>I am drawn to roles where customer understanding, data, and execution meet: product management, analytics, and consulting.</p>
           </div>
           <div class="story-photo glass">
             <img src="images/Case3.jpeg" alt="Student presenting a healthcare budget strategy slide at Vertex Pharmaceuticals" loading="lazy" />
@@ -1048,69 +1085,84 @@
               <article class="experience-entry">
                 <div class="experience-head">
                   <div>
+                    <h3>Product Lead | Co Founder</h3>
+                    <div class="experience-org">SRAN</div>
+                  </div>
+                  <div class="experience-meta">Kathmandu, Nepal (Remote)<br />March 2025 to Present · Part time</div>
+                </div>
+                <ul>
+                  <li>Own product strategy and the roadmap, using client research to define requirements and prioritize features with a distributed team.</li>
+                  <li>Built extraction pipelines that convert unstructured company filings into structured financial datasets, and a standardization approach for inconsistently named financial fields.</li>
+                  <li>The platform tracks 17 NEPSE indices and subindices, and its public Financials directory lists 280 companies across 12 sectors. <a href="https://sran.com.np/" target="_blank" rel="noopener noreferrer">sran.com.np</a></li>
+                </ul>
+              </article>
+
+              <article class="experience-entry">
+                <div class="experience-head">
+                  <div>
+                    <h3>Business &amp; Data Analyst</h3>
+                    <div class="experience-org">Babson College</div>
+                  </div>
+                  <div class="experience-meta">Boston, MA, USA<br />September 2025 to May 2026</div>
+                </div>
+                <ul>
+                  <li>Extracted, cleaned, and modeled accommodation and examination data from AIM in Excel, producing reports on service demand and operational capacity for the Director.</li>
+                  <li>Gathered reporting requirements and coordinated with IT teams on AIM integration options and Power BI dashboard development.</li>
+                </ul>
+              </article>
+
+              <article class="experience-entry">
+                <div class="experience-head">
+                  <div>
                     <h3>Board Fellow</h3>
                     <div class="experience-org">Justice 4 Housing</div>
                   </div>
-                  <div class="experience-meta">Boston, MA, USA<br />September 2025 – May 2026</div>
+                  <div class="experience-meta">Boston, MA, USA<br />September 2025 to May 2026</div>
                 </div>
-                <p class="experience-note">Worked on strategy, operations, and data-driven projects.</p>
+                <p class="experience-note">Contributed to board discussions on governance, resource allocation, and program effectiveness through Babson Board Fellows.</p>
               </article>
 
               <article class="experience-entry">
                 <div class="experience-head">
                   <div>
-                    <h3>Business Analyst</h3>
-                    <div class="experience-org">Babson College</div>
-                  </div>
-                  <div class="experience-meta">Boston, MA, USA<br />September 2025 – May 2026</div>
-                </div>
-                <ul>
-                  <li>Delivered data-driven analysis and strategic recommendations for Babson College internal operations.</li>
-                  <li>Synthesized research findings into structured presentations for senior stakeholders.</li>
-                </ul>
-              </article>
-
-              <article class="experience-entry">
-                <div class="experience-head">
-                  <div>
-                    <h3>Strategy &amp; Technology Consultant</h3>
+                    <h3>Product &amp; Technology Consultant</h3>
                     <div class="experience-org">FireFlower Alternative Energy</div>
                   </div>
-                  <div class="experience-meta">Boston, MA, USA<br />May 2025 to September 2025</div>
+                  <div class="experience-meta">Boston, MA, USA<br />May 2025 to August 2025</div>
                 </div>
                 <ul>
-                  <li>Built solar ROI models to support investment and project decisions.</li>
-                  <li>Led digital transformation work to streamline internal operations and reduce execution friction.</li>
-                  <li>Worked on business development, proposals, and client discussions.</li>
+                  <li>Built an internal tool using Python, Google Colab, and OpenStreetMap to locate commercial properties, estimate rooftop area, and generate prospect lists for solar outreach.</li>
+                  <li>Developed financial models to assess project costs, returns, and the viability of renewable energy opportunities.</li>
+                  <li>Automated Salesforce activities and connected workflows, cutting related operational costs an estimated 25%.</li>
                 </ul>
               </article>
 
               <article class="experience-entry">
                 <div class="experience-head">
                   <div>
-                    <h3>Student Consultant</h3>
-                    <div class="experience-org">Central One Federal Credit Union</div>
+                    <h3>Strategy Consultant</h3>
+                    <div class="experience-org">Central One Federal Credit Union · Babson Consulting Experience</div>
                   </div>
-                  <div class="experience-meta">Boston, MA, USA<br />January 2025 – May 2025</div>
+                  <div class="experience-meta">Boston, MA, USA<br />January 2025 to May 2025</div>
                 </div>
                 <ul>
-                  <li>Conducted market and competitive analysis to inform strategic positioning for a regional credit union.</li>
-                  <li>Developed structured recommendations and presented findings to client leadership.</li>
+                  <li>Led the strategy and analytics workstream evaluating more than $500K in philanthropic programs.</li>
+                  <li>Designed an Impact Score Model and identified a potential 25% cost reduction within selected lower performing initiatives.</li>
                 </ul>
               </article>
 
               <article class="experience-entry">
                 <div class="experience-head">
                   <div>
-                    <h3>Business Development and Innovation Manager</h3>
-                    <div class="experience-org">KHALTI Pvt. Ltd.</div>
+                    <h3>Product, Partnerships &amp; Innovation Manager</h3>
+                    <div class="experience-org">IME Khalti Ltd.</div>
                   </div>
-                  <div class="experience-meta">Kathmandu, Nepal<br />April 2023 to August 2024</div>
+                  <div class="experience-meta">Lalitpur, Nepal<br />April 2023 to August 2024</div>
                 </div>
                 <ul>
-                  <li>Closed 1,500+ business partnerships, including 150+ tier 1 businesses, across Nepal.</li>
-                  <li>Led B2B fintech integrations across digital wallet, payment gateway, QR, and POS solutions.</li>
-                  <li>Launched Places and 10+ business initiatives while expanding international partnerships and payment solutions.</li>
+                  <li>Helped launch Khalti Places, a deals and offers platform for wallet users, as part of 10+ new services, partnerships, and business initiatives.</li>
+                  <li>Translated merchant and institutional client needs into integration requirements across wallets, payment gateways, QR, and POS solutions.</li>
+                  <li>Closed 1,500+ business partnerships, including 150+ Tier 1 businesses, and managed 16 business development officers.</li>
                 </ul>
               </article>
 
@@ -1123,9 +1175,8 @@
                   <div class="experience-meta">Kathmandu, Nepal<br />September 2022 to April 2023</div>
                 </div>
                 <ul>
-                  <li>Built and engaged a community of 1,000+ young students through targeted STEM initiatives.</li>
-                  <li>Designed and executed events that increased participation, learning, and ecosystem visibility.</li>
-                  <li>Supported partnerships and outreach across 10+ cities in Nepal.</li>
+                  <li>Built and managed a community of 1,000+ students participating in coding, robotics, and STEM programs.</li>
+                  <li>Expanded outreach across 10+ cities in Nepal through school partnerships, workshops, and educational events.</li>
                 </ul>
               </article>
 
@@ -1135,12 +1186,11 @@
                     <h3>Regional Associate for Central and South Asia</h3>
                     <div class="experience-org">Hult Prize Foundation</div>
                   </div>
-                  <div class="experience-meta">June 2021 to August 2022</div>
+                  <div class="experience-meta">Kathmandu, Nepal<br />June 2021 to August 2022</div>
                 </div>
                 <ul>
-                  <li>Recruited and onboarded 500+ campus directors across Asia while supervising 100+ student leaders.</li>
-                  <li>Led operations for 4 regional summits across Mumbai, Dhaka, Islamabad, and Kathmandu.</li>
-                  <li>Supported university level entrepreneurship programs and changemaker engagement at scale.</li>
+                  <li>Part of a regional team that recruited and onboarded 500+ Campus Directors across Asia; personally mentored and supervised 100+ across Central and South Asia.</li>
+                  <li>Directed operational planning for four Regional Impact Summits in Mumbai, Dhaka, Islamabad, and Kathmandu.</li>
                 </ul>
               </article>
             </div>
@@ -1151,8 +1201,8 @@
               <h3>Recognition and leadership</h3>
               <ul class="compact-list">
                 <li>Top 20 Campus Director globally, Hult Prize Foundation, Class of 2021</li>
-                <li>L'Oréal Brandstorm 2025 — Certificate of Recognition, Babson College team</li>
-                <li>Hack-A-Week Fintech Category Winner, CityTech 2019</li>
+                <li>L'Oréal Brandstorm 2025, Certificate of Recognition, Babson College team</li>
+                <li>Hack A Week Fintech Category Winner, CityTech 2019</li>
                 <li>Academic Mentor, Babson Summer Study Program, 2025</li>
               </ul>
             </div>
@@ -1160,10 +1210,10 @@
             <div class="side-block">
               <h3>What makes this profile unusual</h3>
               <ul class="compact-list">
-                <li>B.E. in Electronics and Communication Engineering — brings analytical rigor to strategy work.</li>
-                <li>Operated across Nepal, South Asia, and the US — comfortable with ambiguity and cross-cultural complexity.</li>
-                <li>MBA concentrations in Business Analytics and Machine Learning, plus certifications from Stanford (ML) and UCSD (Big Data).</li>
-                <li>Fluent in Nepali and English; experienced working across formal and informal business ecosystems.</li>
+                <li>B.E. in Electronics and Communication Engineering, applied to product and data work.</li>
+                <li>Worked across Nepal, South Asia, and the US, comfortable with ambiguity and cross cultural teams.</li>
+                <li>MBA concentrations in Business Analytics and Machine Learning, plus certifications from Stanford (Machine Learning) and UC San Diego (Big Data).</li>
+                <li>Fluent in English, Nepali, and Hindi.</li>
               </ul>
             </div>
           </aside>
@@ -1174,35 +1224,39 @@
         <div class="section-top">
           <div>
             <span class="section-kicker">Selected Work</span>
-            <h2 class="section-title">Selected work: analysis, strategy, and execution.</h2>
+            <h2 class="section-title">Selected work: product, data, and strategy.</h2>
           </div>
         </div>
 
         <div class="showcase-grid">
-          <article class="showcase-card" data-title="Presenting strategy at Vertex Pharmaceuticals" data-caption="Student presenting a healthcare budget strategy slide at Vertex Pharmaceuticals" data-alt="Student presenting a healthcare budget strategy slide at Vertex Pharmaceuticals" data-image="images/Case3.jpeg" data-category="work">
+          <article class="showcase-card text-card">
+            <div class="sran-stats">
+              <div><strong>17</strong><span>NEPSE indices and subindices tracked</span></div>
+              <div><strong>280</strong><span>companies across 12 sectors in Financials</span></div>
+            </div>
+            <div class="showcase-content">
+              <div class="pill">Product</div>
+              <h3>SRAN, a financial research platform for Nepal</h3>
+              <p>Lead product and built the pipelines that turn unstructured company filings into structured, standardized financial data.</p>
+              <a class="card-link" href="https://sran.com.np/" target="_blank" rel="noopener noreferrer">Visit sran.com.np</a>
+            </div>
+          </article>
+
+          <article class="showcase-card" data-title="Solar prospecting tool at FireFlower Alternative Energy" data-caption="Working session at the FireFlower Alternative Energy office" data-alt="Four people in a working meeting at FireFlower Alternative Energy office" data-image="images/FFAE.jpeg" data-category="work">
+            <img src="images/FFAE.jpeg" alt="Four people in a working meeting at FireFlower Alternative Energy office" loading="lazy" />
+            <div class="showcase-content">
+              <div class="pill">Data</div>
+              <h3>Built a solar prospecting tool</h3>
+              <p>Python and OpenStreetMap tool that finds commercial rooftops and turns them into prospect lists for solar outreach.</p>
+            </div>
+          </article>
+
+          <article class="showcase-card" data-title="Presenting strategy at Vertex Pharmaceuticals" data-caption="Presenting a healthcare budget strategy to Vertex Pharmaceuticals executives" data-alt="Student presenting a healthcare budget strategy slide at Vertex Pharmaceuticals" data-image="images/Case3.jpeg" data-category="work">
             <img src="images/Case3.jpeg" alt="Student presenting a healthcare budget strategy slide at Vertex Pharmaceuticals" loading="lazy" />
             <div class="showcase-content">
-              <div class="pill">Communication</div>
+              <div class="pill">Strategy</div>
               <h3>Presented strategy to Vertex Pharmaceuticals</h3>
-              <p>Presented a healthcare strategy to Vertex, translating data into clear recommendations for leadership.</p>
-            </div>
-          </article>
-
-          <article class="showcase-card" data-title="Vertex Pharmaceuticals, Boston" data-caption="Four students in business suits outside Vertex Pharmaceuticals headquarters" data-alt="Four students in business suits outside Vertex Pharmaceuticals headquarters" data-image="images/Case4.jpeg" data-category="work">
-            <img src="images/Case4.jpeg" alt="Four students in business suits outside Vertex Pharmaceuticals headquarters" loading="lazy" />
-            <div class="showcase-content">
-              <div class="pill">Professional Exposure</div>
-              <h3>Corporate strategy project at Vertex</h3>
-              <p>Analyzed business problems and presented recommendations in a corporate strategy setting.</p>
-            </div>
-          </article>
-
-          <article class="showcase-card" data-title="Fireflower Alternative Energy" data-caption="Four people in a working meeting at Fireflower Alternative Energy office" data-alt="Four people in a working meeting at Fireflower Alternative Energy office" data-image="images/FFAE.jpeg" data-category="work">
-            <img src="images/FFAE.jpeg" alt="Four people in a working meeting at Fireflower Alternative Energy office" loading="lazy" />
-            <div class="showcase-content">
-              <div class="pill">Execution</div>
-              <h3>Led clean energy strategy and execution</h3>
-              <p>Built solar ROI models and worked on strategy and operations across real client projects.</p>
+              <p>Translated data into a clear healthcare budget recommendation for Vertex leadership.</p>
             </div>
           </article>
         </div>
@@ -1369,25 +1423,10 @@
             </div>
           </article>
 
-          <article class="gallery-item" data-category="work" data-title="Presenting our strategy to Vertex Pharmaceuticals executives" data-caption="Student presenting a healthcare budget strategy slide at Vertex Pharmaceuticals" data-alt="Student presenting a healthcare budget strategy slide at Vertex Pharmaceuticals" data-image="images/Case3.jpeg">
-            <img src="images/Case3.jpeg" alt="Student presenting a healthcare budget strategy slide at Vertex Pharmaceuticals" loading="lazy" />
-            <div class="gallery-caption">
-              <h4>Presenting our strategy to Vertex Pharmaceuticals executives</h4>
-            </div>
-          </article>
-
           <article class="gallery-item" data-category="achievement" data-title="Representing Babson at the L'Oréal Brandstorm 2025 case competition" data-caption="Large group of MBA students in business attire at a case competition venue" data-alt="Large group of MBA students in business attire at a case competition venue" data-image="images/Case2.jpeg">
             <img src="images/Case2.jpeg" alt="Large group of MBA students in business attire at a case competition venue" loading="lazy" />
             <div class="gallery-caption">
               <h4>Fireflower Alternative Energy team</h4>
-            </div>
-          </article>
-
-          <article class="gallery-item" data-category="achievement" data-title="L'Oréal Brandstorm 2025 Certificate of Recognition" data-caption="L'Oréal Brandstorm 2025 Certificate of Recognition for Jay Kishan Panjiyar" data-alt="L'Oréal Brandstorm 2025 Certificate of Recognition for Jay Kishan Panjiyar" data-image="images/Case.jpeg">
-            <img src="images/Case.jpeg" alt="L'Oréal Brandstorm 2025 Certificate of Recognition for Jay Kishan Panjiyar" loading="lazy" />
-            <div class="gallery-caption">
-              <h4>L'Oréal Brandstorm 2025 Certificate of Recognition</h4>
-
             </div>
           </article>
 
@@ -1404,13 +1443,6 @@
             <div class="gallery-caption">
               <h4>Sailing on Boston Harbor with the Fireflower Alternative Energy team</h4>
               <p>Boston, summer</p>
-            </div>
-          </article>
-
-          <article class="gallery-item" data-category="work" data-title="Strategy sessions and clean energy conversations at Fireflower" data-caption="Four people in a working meeting at Fireflower Alternative Energy office" data-alt="Four people in a working meeting at Fireflower Alternative Energy office" data-image="images/FFAE.jpeg">
-            <img src="images/FFAE.jpeg" alt="Four people in a working meeting at Fireflower Alternative Energy office" loading="lazy" />
-            <div class="gallery-caption">
-              <h4>Strategy sessions and clean energy conversations at Fireflower</h4>
             </div>
           </article>
 
@@ -1438,14 +1470,6 @@
             </div>
           </article>
 
-          <article class="gallery-item" data-category="achievement" data-title="First place at Citytech Hack A Week 2019" data-caption="Team Khudra receiving winner's check at Citytech Hack A Week 2019" data-alt="Team Khudra receiving winner's check at Citytech Hack A Week 2019" data-image="images/hack_a_week.jpg">
-            <img src="images/hack_a_week.jpg" alt="Team Khudra receiving winner's check at Citytech Hack A Week 2019" loading="lazy" />
-            <div class="gallery-caption">
-              <h4>First place at Citytech Hack A Week 2019</h4>
-              <p>Competitive validation in fintech focused building.</p>
-            </div>
-          </article>
-
           <article class="gallery-item" data-category="leadership" data-title="Representing at the Hult Prize OnCampus Program" data-caption="Group of students at the Hult Prize OnCampus Program at Institute of Engineering, Nepal" data-alt="Group of students at the Hult Prize OnCampus Program at Institute of Engineering, Nepal" data-image="images/hult_at_ioe.jpg">
             <img src="images/hult_at_ioe.jpg" alt="Group of students at the Hult Prize OnCampus Program at Institute of Engineering, Nepal" loading="lazy" />
             <div class="gallery-caption">
@@ -1462,27 +1486,11 @@
             </div>
           </article>
 
-          <article class="gallery-item" data-category="achievement" data-title="Top 5 Finalist, Rising Student ICT Award 2020" data-caption="Screenshot showing Top 5 Finalists for Rising Student ICT Award 2020 including Baala project" data-alt="Screenshot showing Top 5 Finalists for Rising Student ICT Award 2020 including Baala project" data-image="images/ict_award.png">
-            <img src="images/ict_award.png" alt="Screenshot showing Top 5 Finalists for Rising Student ICT Award 2020 including Baala project" loading="lazy" />
-            <div class="gallery-caption">
-              <h4>Top 5 Finalist, Rising Student ICT Award</h4>
-              <p>Innovation recognition for Baala.</p>
-            </div>
-          </article>
-
           <article class="gallery-item" data-category="achievement" data-title="Pitching Baala: From Waste to Wealth" data-caption="Presentation slide showing problem statement for Baala project at ICT Award 2020" data-alt="Presentation slide showing problem statement for Baala project at ICT Award 2020" data-image="images/ict_award2.png">
             <img src="images/ict_award2.png" alt="Presentation slide showing problem statement for Baala project at ICT Award 2020" loading="lazy" />
             <div class="gallery-caption">
               <h4>Pitching Baala: From Waste to Wealth</h4>
             
-            </div>
-          </article>
-
-          <article class="gallery-item" data-category="achievement" data-title="Winning gold at Mechtrix" data-caption="Jay holding a trophy and certificate of achievement at Mechtrix competition" data-alt="Jay holding a trophy and certificate of achievement at Mechtrix competition" data-image="images/mechtrix.jpg">
-            <img src="images/mechtrix.jpg" alt="Jay holding a trophy and certificate of achievement at Mechtrix competition" loading="lazy" />
-            <div class="gallery-caption">
-              <h4>Winning gold at Mechtrix</h4>
-
             </div>
           </article>
 
@@ -1499,14 +1507,6 @@
               <h4>Named one of the Hult Prize Top 20 Campus Directors globally</h4>
             </div>
           </article>
-
-          <article class="gallery-item" data-category="achievement" data-title="Hult Prize Top 20 Campus Directors 2021" data-caption="Official Hult Prize graphic naming Jay Kishan Panjiyar as Top 20 Campus Director, Class of 2021" data-alt="Official Hult Prize graphic naming Jay Kishan Panjiyar as Top 20 Campus Director, Class of 2021" data-image="images/top20_2.jpg">
-            <img src="images/top20_2.jpg" alt="Official Hult Prize graphic naming Jay Kishan Panjiyar as Top 20 Campus Director, Class of 2021" loading="lazy" />
-            <div class="gallery-caption">
-              <h4>Hult Prize Top 20 Campus Directors 2021</h4>
-          
-            </div>
-          </article>
         </div>
       </section>
 
@@ -1514,14 +1514,14 @@
         <div class="section-top">
           <div>
             <span class="section-kicker">Contact</span>
-            <h2 class="section-title">Open to strategy, consulting, and analytics roles.</h2>
+            <h2 class="section-title">Open to product, analytics, and consulting roles.</h2>
           </div>
         </div>
 
         <div class="contact-wrap">
           <div class="contact-card glass">
             <h3>Let’s connect.</h3>
-            <p>I am targeting roles in management consulting, corporate strategy, and analytics — where structured thinking, client communication, and cross-functional execution matter. I bring an unusual combination: engineering rigor, MBA frameworks, and on-the-ground business experience across three continents. The best conversations start here.</p>
+            <p>I am looking for product management, analytics, and consulting roles where customer understanding, data, and execution meet. I bring engineering training, an MBA, and hands on experience in fintech, payments, and financial data across Nepal and the US.</p>
 <div class="contact-actions">
 
   <form action="https://formsubmit.co/jpanjiyar1@babson.edu" method="POST" style="width:100%;">
@@ -1563,7 +1563,7 @@
             </div>
             <div class="contact-tile">
               <small>Focus areas</small>
-              <strong>Management Consulting · Corporate Strategy · Business Analytics · Strategic Operations</strong>
+              <strong>Product Management · Product &amp; Data Analytics · AI · Consulting</strong>
             </div>
           </div>
         </div>
@@ -1571,7 +1571,7 @@
     </main>
 
     <footer class="footer">
-      © 2026 Jay Kishan Panjiyar. Built with intention, clarity, and selective storytelling.
+      © 2026 Jay Kishan Panjiyar
     </footer>
   </div>
 
@@ -1586,16 +1586,6 @@
           <div class="pill" id="lightboxPill">Selected image</div>
           <h3 id="lightboxTitle"></h3>
           <p id="lightboxCaption"></p>
-        </div>
-        <div class="lightbox-meta">
-          <div>
-            <small>Why it is here</small>
-            <span id="lightboxReason"></span>
-          </div>
-          <div>
-            <small>File path</small>
-            <span id="lightboxPath"></span>
-          </div>
         </div>
       </div>
     </div>
@@ -1623,8 +1613,6 @@
     const lightboxImage = document.getElementById('lightboxImage');
     const lightboxTitle = document.getElementById('lightboxTitle');
     const lightboxCaption = document.getElementById('lightboxCaption');
-    const lightboxPath = document.getElementById('lightboxPath');
-    const lightboxReason = document.getElementById('lightboxReason');
     const lightboxClose = document.getElementById('lightboxClose');
     const clickableItems = document.querySelectorAll('.gallery-item, .showcase-card');
 
@@ -1648,8 +1636,6 @@
         lightboxImage.alt = alt;
         lightboxTitle.textContent = title;
         lightboxCaption.textContent = caption;
-        lightboxPath.textContent = image;
-        lightboxReason.textContent = reasonMap[category] || 'This image supports a specific part of the portfolio narrative.';
         lightbox.classList.add('open');
         lightbox.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
